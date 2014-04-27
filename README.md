@@ -1,4 +1,4 @@
 ACM
 ===
 
-Programming Algorthm
+Programming Algorthms
