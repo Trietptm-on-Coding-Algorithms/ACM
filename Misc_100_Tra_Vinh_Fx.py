@@ -1,15 +1,16 @@
+# init table: row x, row y
 y = []
 t = []
 
-# khoi tao gia tri cho list
+# create value for table, row x : 0 --> 12
 for i in range(0,13):
 	print "f(%d) = " % i,
 	t.append(i)
 	temp = int(raw_input())
 	y.append(temp)
 
-# tinh gia tri da thuc
-x = 3004
+# Lagrange polynomial
+x = 3004 # variable to calc F(x)
 
 t0 = y[0]*(x-t[1])*(x-t[2])*(x-t[3])*(x-t[4])*(x-t[5])*(x-t[6])*(x-t[7])*(x-t[8])*(x-t[9])*(x-t[10])*(x-t[11])*(x-t[12])
 m0 = (t[0]-t[1])*(t[0]-t[2])*(t[0]-t[3])*(t[0]-t[4])*(t[0]-t[5])*(t[0]-t[6])*(t[0]-t[7])*(t[0]-t[8])*(t[0]-t[9])*(t[0]-t[10])*(t[0]-t[11])*(t[0]-t[12])
@@ -65,4 +66,5 @@ s12 = t12/m12
 
 s = s0 + s1 + s2 + s3 + s4 + s5 + s6 + s7 + s9 + s8 + s10 + s11 + s12
 
+# F(3004) = ...
 print s
