@@ -14,7 +14,7 @@
 
 ### Code
 
-* Python: [source](https://raw.githubusercontent.com/sft-hardwork/ACM/master/security-override/level3/level3.c)
+* Python: [source](https://github.com/sft-hardwork/ACM/blob/master/0x3004-ctf/misc100.py)
 
 ### Getting the flag
 
