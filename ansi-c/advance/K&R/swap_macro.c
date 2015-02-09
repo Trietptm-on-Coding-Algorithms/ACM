@@ -1,0 +1,1 @@
+#define swap(type, a, b) {type temp = a; a = b; b = temp; }
