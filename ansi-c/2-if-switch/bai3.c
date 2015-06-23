@@ -7,7 +7,7 @@ main()
 	float dd,dx,dy,x,y;
 	printf("\nNhap vao a,b,c,d,e,f : ");  scanf("%f %f %f %f %f %f",&a,&b,&c,&d,&e,&f);
 	dd = a*e - d*b;
-	dx = b*f - e*c;
+	dx = c*e - b*f;
 	dy = a*f - d*c;
 	if (dd != 0)  
 	{
