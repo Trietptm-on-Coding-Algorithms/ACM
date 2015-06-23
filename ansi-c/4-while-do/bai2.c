@@ -9,10 +9,10 @@ float sinx(float x, float eps);
 main()
 {
 	float a,b;
-	printf("\nNhap vao so can tinh x : ");  scanf("%f",&a);
-	printf("\nNhap vao do chinh xac Eps : ");  scanf("%f",&b);
-	printf("\nDo chinh xac Eps, Sin(%f) = %f ",a,sinx(a,b));
-	printf("\nChinh xac Sin(%f) = %f",a,sin(a));
+	printf("\nNhap vao so can tinh x : "); scanf("%f",&a);
+	printf("\nNhap vao do chinh xac Eps : "); scanf("%f",&b);
+	printf("\nDo chinh xac Eps, Sin(%.6f) = %.6f ", a, sinx(a,b));
+	printf("\nChinh xac Sin(%f) = %.6f", a, sin(a));
 	getch();
 }
 
