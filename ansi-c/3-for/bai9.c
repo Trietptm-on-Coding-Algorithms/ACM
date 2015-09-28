@@ -4,7 +4,7 @@
 int main()
 {
 	int *x, *y, *z, i, j, t, k, m, n;
-	printf("\nNhap vao kich thuoc ma tran A: ");  scanf("%d",&m);
+	printf("\nNhap vao kich thuoc mang A: ");  scanf("%d",&m);
     x = (int *) malloc (m*sizeof(int));
 	for (i=0; i<m; i++)
     {
@@ -12,7 +12,7 @@ int main()
     	scanf("%d",x+i);
     }
 
-	printf("\nNhap vao kich thuoc ma tran B: ");  scanf("%d",&n);
+	printf("\nNhap vao kich thuoc mang B: ");  scanf("%d",&n);
     y = (int *) malloc (n*sizeof(int));
 	for (i=0; i<n; i++)
     {
@@ -36,13 +36,13 @@ int main()
 
     printf("\n\nMANG A\n\n");
 	for (i=0; i<m; i++)
-    	printf("%d     ",*(x+i));
+    	printf("%5d",*(x+i));
     printf("\n\nMANG B\n\n");
 	for (j=0; j<n; j++)
-    	printf("%d     ",*(y+j));
+    	printf("%5d",*(y+j));
     printf("\n\nMANG MERGE SORT\n\n");
 	for (i=0; i<(m+n); i++)
-    	printf("%d     ",*(z+i));
+    	printf("%5d",*(z+i));
 
     free(x);
     free(y);

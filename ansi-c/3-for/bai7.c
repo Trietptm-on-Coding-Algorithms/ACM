@@ -11,14 +11,16 @@ int main()
     printf("\nNhap vao 3 so m,n,p : ");  scanf("%d %d %d",&m,&n,&p);
     input(a,m,n,'A');
     output(a,m,n,'A');
-    input(b,m,n,'B');
-    output(b,m,n,'B');
+    input(b,n,p,'B');
+    output(b,n,p,'B');
 
-/*
-    for (i=0; i<n; i++)
-        for (j=0;  j<p; j++)
-				for (k=0; k<m; k++)
-                	c[i][j] += a[i][k]*b[k][j]; */
+    for (int i=0; i<n; i++)
+        for (int j=0;  j<p; j++)
+				for (int k=0; k<m; k++)
+                	c[i][j] += a[i][k]*b[k][j];
+
+    output(c,m,p,'C');
+    getch();
     return (0);
 }
 

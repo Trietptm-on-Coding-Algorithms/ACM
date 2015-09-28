@@ -1,16 +1,17 @@
 #include <stdio.h>
 #include <conio.h>
-long ucln(long x, long y);
+int ucln(int x, int y);
 
-main()
+int main()
 {
-	long a,b;
-	printf("\nNhap 2 so nguyen duong : ");  scanf("%ld %ld",&a,&b);
-	printf("\nUCLN(%ld,%ld) = %ld\n",a,b,ucln(a,b));
+	int a,b;
+	printf("\nNhap 2 so nguyen duong : ");  scanf("%d %d", &a, &b);
+	printf("\nUCLN(%d,%d) = %d\n", a, b, ucln(a,b));
     getch();
+    return 0;
 }
 
-long ucln(long x, long y)
+int ucln(int x, int y)
 {
-	return (x == 0) ? y : ucln(y%x,x);
+	return ((x == 0) ? y : ucln(y % x, x));
 }
